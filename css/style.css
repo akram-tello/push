@@ -89,7 +89,7 @@ body {
   transition:all 1s;
 }
 .flipper-container:hover .flip{
-  transform:rotateY(360deg);
+  transform:rotateY(180deg);
 }
 .face{
   position:absolute;
@@ -98,14 +98,13 @@ body {
   backface-visibility:hidden;
 }
 .face.back {
-  display: block;
-  transform: rotateY(360deg);
+  display: hidden;
+  transform: rotateY(180deg);
   box-sizing: border-box;
   color: var(--text-light);
   text-align: center;
   background-color: var(--primary-color);
   border-radius: 50%;
-  backface-visibility:hidden;
 }
 .back h2{
   padding:8rem 0px;
