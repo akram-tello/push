@@ -92,16 +92,16 @@ function swipeDirection(startX, endX, img, canvas) {
   }
 }
 
-function showText(canvas, img) {
-  img.style.opacity = 0;
-  const ctx = canvas.getContext('2d');
-  const dimension = canvas.width;
-  const progressValue = canvas.getAttribute('data-progress-value');
-  const endAngle = (progressValue / 60) * 360;
-  const colorIndex = 0; 
-  drawCircularProgress(ctx, dimension, endAngle, colorIndex); 
-  drawText(ctx, dimension, progressValue);
-}
+// function showText(canvas, img) {
+//   img.style.opacity = 0;
+//   const ctx = canvas.getContext('2d');
+//   const dimension = canvas.width;
+//   const progressValue = canvas.getAttribute('data-progress-value');
+//   const endAngle = (progressValue / 60) * 360;
+//   const colorIndex = 0; 
+//   drawCircularProgress(ctx, dimension, endAngle, colorIndex); 
+//   drawText(ctx, dimension, progressValue);
+// }
 
 function showImage(canvas, img) {
   img.style.opacity = 1;
