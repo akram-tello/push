@@ -50,7 +50,6 @@ body {
   margin: auto;
 }
 
-.circle-img canvas,
 .circle-img img {
   position: absolute;
   transition: opacity 0.5s ease; /* Smooth transition for opacity */
@@ -89,7 +88,7 @@ body {
   transition:all 1s;
 }
 .flipper-container:hover .flip{
-  transform:rotateY(180deg);
+  transform:rotateY(360deg);
 }
 .face{
   position:absolute;
@@ -98,7 +97,7 @@ body {
   backface-visibility:hidden;
 }
 .face.back {
-  display: hidden;
+  display: block;
   transform: rotateY(180deg);
   box-sizing: border-box;
   color: var(--text-light);
@@ -139,10 +138,6 @@ body {
 
 .member .pic img {
   transition: ease-in-out 0.3s;
-}
-
-.member:hover img {
-  transform: scale(1.1);
 }
 
 .member h4 {
