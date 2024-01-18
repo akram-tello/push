@@ -105,6 +105,7 @@ body {
   text-align: center;
   background-color: var(--primary-color);
   border-radius: 50%;
+  backface-visibility:hidden;
 }
 .back h2{
   padding:8rem 0px;
