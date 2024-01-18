@@ -1,55 +1,3 @@
-// Set styles for flipper-container
-const flipperContainers = document.querySelectorAll('.flipper-container');
-flipperContainers.forEach(container => {
-  container.style.position = 'relative';
-  container.style.margin = '35px auto';
-  container.style.perspective = '1000px';
-  container.style.width = '300px';
-  container.style.height = '300px';
-});
-
-// Set styles for flip
-const flips = document.querySelectorAll('.flip');
-flips.forEach(flip => {
-  flip.style.height = '100%';
-  flip.style.width = '100%';
-  flip.style.transformStyle = 'preserve-3d';
-  flip.style.transition = 'all 1s';
-});
-
-// Hover effect for flip
-flipperContainers.forEach(container => {
-  container.addEventListener('mouseover', () => {
-    container.querySelector('.flip').style.transform = 'rotateY(180deg)';
-  });
-  container.addEventListener('mouseout', () => {
-    container.querySelector('.flip').style.transform = 'none';
-  });
-});
-
-// Set styles for face
-const faces = document.querySelectorAll('.face');
-faces.forEach(face => {
-  face.style.position = 'absolute';
-  face.style.height = '100%';
-  face.style.width = '100%';
-  face.style.backfaceVisibility = 'hidden';
-});
-
-// Set styles for back face
-const backFaces = document.querySelectorAll('.face.back');
-backFaces.forEach(backFace => {
-  backFace.style.display = 'flex';
-  backFace.style.alignItems = 'center';
-  backFace.style.justifyContent = 'center';
-  backFace.style.transform = 'rotateY(180deg)';
-  backFace.style.boxSizing = 'border-box';
-  backFace.style.color = 'var(--text-light)';
-  backFace.style.textAlign = 'center';
-  backFace.style.backgroundColor = 'var(--primary-color)';
-  backFace.style.borderRadius = '50%';
-});
-
 // Configuration Constants
 const RADIAN = Math.PI / 180;
 const START_ANGLE = 270;
@@ -164,4 +112,3 @@ function showImage(canvas, img) {
   const colorIndex = 0; 
   drawCircularProgress(ctx, dimension, endAngle, colorIndex); 
 }
-
