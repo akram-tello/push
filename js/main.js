@@ -112,3 +112,19 @@ function showImage(canvas, img) {
   const colorIndex = 0; 
   drawCircularProgress(ctx, dimension, endAngle, colorIndex); 
 }
+
+ var isBackSide = false;
+
+if (isBackSide) {
+  // Get the canvas and the text elements
+  var canvas = document.getElementById('canvas-profile');
+  var text = document.getElementById('push-progress');
+
+  // Hide the elements
+  canvas.style.display = 'none';
+  text.style.display = 'none';
+} else {
+  // Show the elements
+  canvas.style.display = 'block';
+  text.style.display = 'block';
+}
