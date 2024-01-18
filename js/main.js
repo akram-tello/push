@@ -112,10 +112,3 @@ function showImage(canvas, img) {
   const colorIndex = 0; 
   drawCircularProgress(ctx, dimension, endAngle, colorIndex); 
 }
-
-
-// stop handleSwipeGesture when flip to back side
-function stopHandleSwipeGesture(container) {
-  container.removeEventListener('touchstart');
-  container.removeEventListener('touchend');
-}
