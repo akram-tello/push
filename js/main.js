@@ -112,12 +112,3 @@ function showImage(canvas, img) {
   const colorIndex = 0; 
   drawCircularProgress(ctx, dimension, endAngle, colorIndex); 
 }
-
-
-// Function to update the progress text
-function updateProgressText(progressValue) {
-  const backFaceText = document.querySelector('.back h2');
-  if (backFaceText) {
-    backFaceText.textContent = `${progressValue} pushups`;
-  }
-}
