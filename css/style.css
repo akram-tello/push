@@ -99,7 +99,7 @@ body {
 }
 .face.back {
   display: block;
-  transform: rotateY(180deg);
+  transform: rotateY(360deg);
   box-sizing: border-box;
   color: var(--text-light);
   text-align: center;
